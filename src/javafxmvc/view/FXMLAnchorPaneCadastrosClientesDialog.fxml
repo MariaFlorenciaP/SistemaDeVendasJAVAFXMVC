@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="278.0" prefWidth="554.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxmvc.controller.FXMLAnchorPaneCadastrosClientesDialogController">
+   <children>
+      <GridPane layoutX="74.0" layoutY="37.0" prefHeight="157.0" prefWidth="436.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="109.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.0" minWidth="10.0" prefWidth="208.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="labelClienteNome" text="Nome" />
+            <Label fx:id="labelClienteCPF" text="CPF" GridPane.rowIndex="1" />
+            <Label fx:id="labelClienteTelefone" text="Telefone" GridPane.rowIndex="2" />
+            <TextField fx:id="textFieldClienteNome" GridPane.columnIndex="1" />
+            <TextField fx:id="textFieldClienteCPF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldClienteTelefone" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Group layoutX="49.0" layoutY="26.0" AnchorPane.bottomAnchor="31.0" AnchorPane.rightAnchor="99.33984375">
+         <children>
+            <Button fx:id="buttonCancelar" layoutX="329.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+            <Button fx:id="buttonConfirmar" layoutX="186.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleButtonConfirmar" text="Confirmar" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
